@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OLYMPIAD AI — zamonaviy olimpiada tayyorgarligi platformasi." />
+    <title>OLYMPIAD AI</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23091b2d'/%3E%3Cg fill='none' stroke='%236fe7ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 26l14-10 14 10v14H18z'/%3E%3Cpath d='M23 30h22'/%3E%3Cpath d='M32 26v18'/%3E%3Cpath d='M22 44h20'/%3E%3Ccircle cx='46' cy='18' r='5' fill='%236fe7ff' stroke='none'/%3E%3C/g%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Asosiy navigatsiya">
+        <a class="brand" href="#home" aria-label="OLYMPIAD AI bosh sahifa">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Brand mark">
+              <path d="M16 25.5 32 17l16 8.5v14H16z" />
+              <path d="M24 28h16v12H24z" />
+              <path d="M22 42h20" />
+              <circle cx="47" cy="18" r="5" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">OLYMPIAD AI</span>
+            <small>Smart learning</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#how">Qanday ishlaydi</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#assistant">AI yordamchi</a>
+          <a href="#contact">Aloqa</a>
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-ghost" id="openLoginBtn" type="button">Savol berish</button>
+          <button class="btn btn-primary" id="openRegisterBtn" type="button">Javob olish</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow">Bilim bilan oldinga</span>
+          <h1>Informatika olimpiadasiga aqlli tayyorlan.</h1>
+          <p class="hero-text">OLYMPIAD AI platformasi faqat informatika faniga yo‘naltirilgan: algoritmlar, ma’lumotlar tuzilmalari, dasturlash va masalalarni tez va tushunarli yechish uchun qulay imkoniyatlar yaratadi.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-start-test type="button">Testni boshlash</button>
+            <button class="btn btn-secondary" id="showStudyPlan" type="button">Ertangi informatika mashg‘ulotini rejalashtirish</button>
+          </div>
+          <ul class="mini-metrics" aria-label="Platform statistikasi">
+            <li><strong>12K+</strong><span>savollar</span></li>
+            <li><strong>2.1K</strong><span>faol o‘quvchi</span></li>
+            <li><strong>95%</strong><span>muvaffaqiyat</span></li>
+          </ul>
+        </div>
+        <div class="hero-panel" aria-label="Najot va progress preview">
+          <div class="panel-card primary-card">
+            <div class="card-topline"><span class="signal-dot"></span><span>Bugungi sessiya</span></div>
+            <h3>Informatika</h3>
+            <div class="progress-block">
+              <div class="progress-meta"><span>9/12 savol</span><span>75%</span></div>
+              <div class="progress-bar"><span style="width:75%"></span></div>
+            </div>
+            <ul class="stat-list">
+              <li><span>To‘g‘ri</span><strong>9</strong></li>
+              <li><span>Qoldi</span><strong>3</strong></li>
+              <li><span>Vaqt</span><strong>16:25</strong></li>
+            </ul>
+          </div>
+          <div class="floating-card">
+            <small>O‘qituvchi</small>
+            <strong>Olimpiada Ustozi AI</strong>
+            <p>“Sizga algoritm, mantiq va dasturlashga oid eng muhim qoidalarni qisqa, amaliy tarzda tushuntiraman.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section" id="how">
+        <div class="section-head">
+          <span class="eyebrow">Platforma ishlashi</span>
+          <h2>Har qadamda maqsadga yaqinlashing</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="info-card"><div class="icon-wrap">01</div><h3>1. Reja tuzing</h3><p>Fan va sinfga mos test, mavzu va qiyinlikni tanlang.</p></article>
+          <article class="info-card"><div class="icon-wrap">02</div><h3>2. Mavzuni mustahkamlang</h3><p>Qisqa ko‘rsatmalar, formulalar va tushuntirishlar bilan ishlang.</p></article>
+          <article class="info-card"><div class="icon-wrap">03</div><h3>3. Xatolaringizni tahlil qiling</h3><p>Har bir savol uchun to‘g‘ri javob va sabablarni ko‘rsating.</p></article>
+          <article class="info-card"><div class="icon-wrap">04</div><h3>4. Yutuqlarni kuzatib boring</h3><p>Akademik progress, streak va reyting orqali motivatsiyani saqlang.</p></article>
+        </div>
+      </section>
+
+      <section class="container content-section" aria-labelledby="selection-title">
+        <div class="section-head" id="selection-title">
+          <span class="eyebrow">Sinf va fan</span>
+          <h2>Tanlash bo‘limi</h2>
+        </div>
+        <div class="selection-grid">
+          <div class="selection-box">
+            <h3>Sinf</h3>
+            <div class="pill-group" id="gradePills">
+              <button class="pill active" type="button" data-grade="9">9-sinf</button>
+              <button class="pill" type="button" data-grade="10">10-sinf</button>
+              <button class="pill" type="button" data-grade="11">11-sinf</button>
+            </div>
+          </div>
+          <div class="selection-box">
+            <h3>Fan</h3>
+            <div class="pill-group" id="subjectPills">
+              <button class="pill active" type="button" data-subject="Informatika">Informatika</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section" id="dashboard">
+        <div class="section-head">
+          <span class="eyebrow">Learning dashboard</span>
+          <h2>Shaxsiy o‘quv paneli</h2>
+        </div>
+        <div class="dashboard-grid">
+          <div class="panel-card dashboard-card wide">
+            <div class="dashboard-header">
+              <div><small>Salom</small><h3 id="greetingName">O‘quvchi</h3></div>
+              <button class="btn btn-primary" id="continueStudyBtn" type="button">Davom ettirish</button>
+            </div>
+            <div class="dashboard-metrics">
+              <div><span>Umumiy aniqlik</span><strong id="overallAccuracy">0%</strong></div>
+              <div><span>Bajarilgan testlar</span><strong id="completedTests">0</strong></div>
+              <div><span>Streak</span><strong id="studyStreak">0 kun</strong></div>
+            </div>
+          </div>
+          <div class="panel-card dashboard-card">
+            <h3>Informatika bo‘yicha progress</h3>
+            <ul class="subject-progress" id="subjectProgressList">
+              <li><span>Algoritmlar</span><strong>82%</strong></li>
+              <li><span>Dasturlash</span><strong>74%</strong></li>
+              <li><span>Ma’lumotlar tuzilmasi</span><strong>68%</strong></li>
+            </ul>
+          </div>
+          <div class="panel-card dashboard-card">
+            <h3>Kengash va tavsiyalar</h3>
+            <p class="muted">Bugun 30 daqiqalik fokus mashg‘ulot qilib, 3 ta muhim informatika mavzusini qayta ko‘rib chiqing.</p>
+            <ul class="tip-list"><li>Algoritm loyihalash</li><li>Tsikllar va shartlar</li><li>Massivlar va funktsiyalar</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section" id="test-engine">
+        <div class="section-head">
+          <span class="eyebrow">Test engine</span>
+          <h2>Qisqa sinov va mashg‘ulot</h2>
+        </div>
+        <div class="test-config panel-card">
+          <div class="field-group"><label for="gradeSelect">Sinf</label><select id="gradeSelect"><option value="9">9-sinf</option><option value="10">10-sinf</option><option value="11">11-sinf</option></select></div>
+          <div class="field-group"><label for="subjectSelect">Fan</label><select id="subjectSelect"><option value="Informatika">Informatika</option></select></div>
+          <div class="field-group"><label for="difficultySelect">Qiyinchilik</label><select id="difficultySelect"><option value="Boshlang‘ich">Boshlang‘ich</option><option value="O‘rtacha" selected>O‘rtacha</option><option value="Yuqori">Yuqori</option></select></div>
+          <div class="field-group"><label for="questionCountSelect">Savollar soni</label><select id="questionCountSelect"><option value="5">5 ta</option><option value="10" selected>10 ta</option><option value="15">15 ta</option></select></div>
+          <button class="btn btn-primary" id="launchTestBtn" type="button">Testni boshlash</button>
+        </div>
+        <div id="quizContainer" class="quiz-container hidden" aria-live="polite"></div>
+        <div id="studyPlanContainer" class="study-plan hidden" aria-live="polite"></div>
+      </section>
+
+      <section class="container content-section" id="assistant">
+        <div class="section-head"><span class="eyebrow">AI yordamchi</span><h2>Olimpiada Ustozi AI</h2></div>
+        <div class="assistant-shell panel-card">
+          <div class="assistant-header"><div><strong>Olimpiada Ustozi AI</strong><small>Uzbek tilida ishlaydi</small></div><span class="badge">Online</span></div>
+          <div class="assistant-chips" aria-label="Fast actions">
+            <button class="chip" type="button" data-ai-action="Sodda tushuntir">Sodda tushuntir</button>
+            <button class="chip" type="button" data-ai-action="Misol ber">Misol ber</button>
+            <button class="chip" type="button" data-ai-action="Yana test ber">Yana test ber</button>
+            <button class="chip" type="button" data-ai-action="Xatolarimni tahlil qil">Xatolarimni tahlil qil</button>
+          </div>
+          <div class="assistant-messages" id="assistantMessages" aria-live="polite"><div class="message bot-message">Assalomu alaykum! Sizga qaysi mavzu yoki savol bo‘yicha yordam kerak?</div></div>
+          <form class="assistant-form" id="assistantForm">
+            <label class="sr-only" for="assistantInput">AI so‘rovingi</label>
+            <input id="assistantInput" type="text" placeholder="Savolingizni yozing..." />
+            <button class="btn btn-primary" type="submit">Yuborish</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="container content-section" id="benefits">
+        <div class="section-head"><span class="eyebrow">Platform benefits</span><h2>Nega OLYMPIAD AI?</h2></div>
+        <div class="benefits-grid">
+          <article class="info-card"><h3>O‘quv motivatsiyasi</h3><p>Har bir mashg‘ulotda progress, natija va natijalarga qarab o‘suvchi motivatsiya.</p></article>
+          <article class="info-card"><h3>Ustozga o‘xshash ko‘rsatmalar</h3><p>Qisqa tushuntirish, formula va savolga oid maslahatlar bilan yanada samarali o‘rganish.</p></article>
+          <article class="info-card"><h3>Adolatli reyting</h3><p>Foydalanuvchi faoliyati va to‘g‘ri javoblar ko‘rsatkichlari asosida shaffof leaderboard.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="brand mini-brand">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" role="img" aria-label="Brand mark"><path d="M16 25.5 32 17l16 8.5v14H16z"/><path d="M24 28h16v12H24z"/><path d="M22 42h20"/><circle cx="47" cy="18" r="5"/></svg></span>
+            <span class="brand-copy"><span class="brand-name">OLYMPIAD AI</span></span>
+          </div>
+          <p>O‘rgan. Mashq qil. Natijangni isbotla. OLYMPIAD AI platformasi talabalarga ilm, mashq va reyting orqali yaxshi natija olib keladi.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Sayt</h3>
+          <ul><li><a href="#home">Bosh sahifa</a></li><li><a href="#how">Qanday ishlaydi</a></li><li><a href="#assistant">AI yordamchi</a></li></ul>
+        </div>
+        <div class="creator-card">
+          <h3>Loyiha yaratuvchisi</h3>
+          <p class="creator-name">Jamshidbek Yo‘ldoshboyev</p>
+          <div class="social-links" aria-label="Ijtimoiy tarmoqlar">
+            <a href="https://www.instagram.com/js_muxandis/" target="_blank" rel="noreferrer" aria-label="Instagram">Instagram</a>
+            <a href="https://t.me/jamwidbek_official" target="_blank" rel="noreferrer" aria-label="Telegram">Telegram</a>
+          </div>
+          <p class="creator-bio">Smart learning, academic competition, technology va shaxsiy o‘sish g‘oyasini real mahsulotga aylantiruvchi loyiha.</p>
+        </div>
+      </div>
+      <div class="footer-bottom container"><span>© 2025 OLYMPIAD AI</span></div>
+    </footer>
+
+    <div id="authModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+        <button class="close-btn" id="closeAuthModal" type="button" aria-label="Yopish">×</button>
+        <div class="auth-panel active" data-auth-panel="login">
+          <h2 id="authTitle">Savol berish</h2>
+          <form id="loginForm" class="auth-form">
+            <label>Ism<input type="text" name="username" placeholder="Ismingiz" /></label>
+            <label>Savolingiz<textarea name="question" rows="4" placeholder="Masalan: for sikli haqida tushuntirib bering..." required></textarea></label>
+            <button class="btn btn-primary" type="submit">Javob olish</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
